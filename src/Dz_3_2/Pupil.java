@@ -2,8 +2,7 @@ package Dz_3_2;
 
 public class Pupil {
 
-    public void study (int study){
-        study=5;
+    public void study (){
     }
     public void read(){
 
