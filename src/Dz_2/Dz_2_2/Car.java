@@ -1,4 +1,4 @@
-package Dz_2_2;
+package Dz_2.Dz_2_2;
 
 public class Car {
     public int year;

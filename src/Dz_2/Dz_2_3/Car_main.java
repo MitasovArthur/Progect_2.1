@@ -1,4 +1,4 @@
-package Dz_2_3;
+package Dz_2.Dz_2_3;
 
 public class Car_main {
     public static void main(String[] args) {

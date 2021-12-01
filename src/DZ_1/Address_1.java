@@ -1,3 +1,5 @@
+package DZ_1;
+
 public class Address_1 {
     public static void main(String[] args) {
         Address address = new Address(15637,"Country","sity","street","house","apartament");

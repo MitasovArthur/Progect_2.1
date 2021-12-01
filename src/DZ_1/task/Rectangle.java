@@ -1,4 +1,4 @@
-package task;
+package DZ_1.task;
 
 public class Rectangle {
     private  double side1;

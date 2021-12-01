@@ -1,3 +1,5 @@
+package DZ_1;
+
 public class Address {
     private int index;
     private String country;
