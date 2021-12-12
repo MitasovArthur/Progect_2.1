@@ -1,4 +1,6 @@
-package DZ_8.Dz_8_2;
+package DZ_8;
+
+import java.util.Objects;
 
 public class Monitor extends Device {
     int resolutionX;
@@ -31,6 +33,18 @@ public class Monitor extends Device {
         return String.format("manufacturer = %s, prise = %s, serialNumer = %s, x=%s,", manufactured, price, serialNumber, resolutionX, resolutionY);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Monitor monitor = (Monitor) o;
+        return resolutionX == monitor.resolutionX && resolutionY == monitor.resolutionY;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), resolutionX, resolutionY);
+    }
 }
 
 

@@ -1,4 +1,6 @@
-package DZ_8.Dz_8_2;
+package DZ_8;
+
+import java.util.Objects;
 
 public class Device {
     String manufactured;
@@ -37,5 +39,18 @@ public class Device {
     @Override
     public String toString() {
         return String.format("manufacturer = %s, prise = %s, serialNumer = %s, x=%s,", manufactured, price, serialNumber);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Device device = (Device) o;
+        return Float.compare(device.price, price) == 0 && Objects.equals(manufactured, device.manufactured) && Objects.equals(serialNumber, device.serialNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(manufactured, price, serialNumber);
     }
 }
