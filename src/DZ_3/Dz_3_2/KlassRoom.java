@@ -15,6 +15,6 @@ public class KlassRoom {
 
 class main{
     public static void main(String[] args) {
-        KlassRoom A = new KlassRoom(BadPupil,BadPupil);
+        //  KlassRoom A = new KlassRoom()
     }
 }
