@@ -1,13 +1,9 @@
 package DZ_4.Dz_4_3;
 
 public class Player implements Playable,Recodable{
+
     @Override
     public void play() {
-
-    }
-
-    @Override
-    public void pause() {
 
     }
 
@@ -17,12 +13,7 @@ public class Player implements Playable,Recodable{
     }
 
     @Override
-    public void recoer() {
-
-    }
-
-    @Override
-    public void paose() {
+    public void pause() {
 
     }
 

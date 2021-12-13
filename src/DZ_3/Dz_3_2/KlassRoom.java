@@ -1,13 +1,20 @@
 package DZ_3.Dz_3_2;
 
 public class KlassRoom {
-    Pupil pupil = new Pupil();
+    public KlassRoom(Pupil study,Pupil read, Pupil write,Pupil relax) {
+    }
+    public KlassRoom(Pupil study,Pupil read, Pupil write){
 
-    public KlassRoom() {
-        pupil.study();
-        pupil.read();
-        pupil.write();
-        pupil.relax();
+    }
+    public KlassRoom(Pupil study,Pupil read){
+
     }
 
+
+}
+
+class main{
+    public static void main(String[] args) {
+        //  KlassRoom A = new KlassRoom()
+    }
 }
