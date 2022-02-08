@@ -1,7 +1,7 @@
 package DZ_6.Dz_6_3;
 
 class Distance {
-    double distance;
+    double distance1;
 
    // public Distance(double distance) {
    //     this.distance = distance;
@@ -12,8 +12,8 @@ class Distance {
     }
 
     static class Convector {
-        static double sm_m(double distance){
-            return distance *100;
+        static double sm_m(double distance1){
+            return distance1 *100;
         }
         static double sm_km(double distance){
             return distance *10000;

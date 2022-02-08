@@ -1,20 +1,23 @@
 package DZ_7.Dz_7_2;
 
 public enum Animals {
-    Lion(54),Triton(2),Crocodile(5);
-    private int age;
-    private String name;
+    CAT(5);
+    int ears;
 
-    Animals(int age){//String name) {
-        this.age = age;
-//        this.name = name;
+
+    Animals(int ears) {
+        this.ears = ears;
     }
 
-    public int toSting( ) {
-        return age;
+    @Override
+    public String toString() {
+        return super.toString() + " " + ears;
     }
+}
 
-    public String toSting(String name) {
-        return name;
+class main {
+    public static void main(String[] args) {
+        Animals animals = Animals.CAT;
+        System.out.println(animals);
     }
 }
